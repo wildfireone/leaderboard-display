@@ -1,0 +1,33 @@
+<!-- views/login.ejs -->
+<!doctype html>
+<html>
+<head>
+    <title>Node Authentication</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link href="stylesheets/style.css" rel="stylesheet">
+    <style>
+        body        { padding-top:80px; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+  <div class='leaderboard'>
+      <h1><span>ROBO SUMO</span></h1>
+      <div class="content"></div>
+  </div>
+
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script>
+  console.log(JSON.parse('<%- leaderboard %>'));
+        var leaderlist = JSON.parse('<%- leaderboard %>');
+  </script>
+  <script src="javascripts/leaderboard.js"></script>
+
+</body>
+</html>
